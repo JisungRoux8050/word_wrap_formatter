@@ -23,3 +23,10 @@ A word longer than the requested width is placed on its own line without breakin
 ## Exports
 
 - `wrap(text, width)` — wraps `text` to `width` columns, returning a string with `\n` separators.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
