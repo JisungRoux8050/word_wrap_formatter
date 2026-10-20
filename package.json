@@ -1,6 +1,6 @@
 {
   "name": "word-wrap-formatter",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Wraps text to a character width respecting word boundaries for email and terminal display.",
   "type": "module",
   "main": "src/index.js",
